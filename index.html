@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin:0;
+        padding:0;
+        background-color: rgb(248, 236, 236);
+        color: rgb(83, 133, 83);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    header {
+        background-color: rgb(176, 233, 180);
+        color: rgb(77, 116, 58);
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    header h1{
+        font-size: 50px;
+        margin-bottom: 40px;
+        font-family: 40px;
+    }
+    header p {
+        font-size: 30px;
+
+    }
+    main{
+        padding-top: 20px;
+        
+    }
+    section{
+        background-color:rgb(209, 224, 204) ;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid;
+        margin-bottom: 15px;
+
+    }
+
+    section h2{
+        color: rgb(83, 133, 83);
+    }
+    .buttons {
+            text-align: right;
+            margin-right: 10px;
+    }
+    .buttons-vizualicao {
+            color: rgb(83, 133, 83);
+            font-size: 15px;
+            margin-left: 10px;
+    }
+    .modo-grade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px; 
+    padding: 20px;
+}
+
+.modo-grade section {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    </style>
+<body>
+    <header>
+        <h1>
+            Bem vindo a minha pagina 
+        <p>
+        --------------------------------------------- Aluno do ensino tecnico -----------------------------------------------
+        </p>
+    </header>
+    <div class="buttons">
+        <button class="buttons-vizualicao" onclick="mudarGrade()">Visualizacao grade</button>
+        <button class="buttons-vizualicao" onclick="mudarLista()">Visualizacao em lista</button>
+    </div>
+
+    <main id="Principal">
+        <section>
+            <h2>Minhas habilidades</h2>
+            <ul>
+                <li>Logica de programacao</li>
+                <li>HTML5 & CSS3</li>
+                <li>Trabalho em equipe</li>
+                <li>IOT</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>
+                Cursos
+            </h2>
+            <ul>
+                <li>Logica de programacao</li>
+                <li>Rede com IOT</li>
+                <li>Sistemas Operacionais</li>
+                <li>Levantamento de Requisitos</li>
+            </ul>
+        </section>
+
+          <section>
+            <h2>
+               Hobbies
+            </h2>
+            <ul>
+                <li>Trilha</li>
+                <li>Artesanato</li>
+                <li>Pintura</li>
+                <li>Colecionar pedras</li>
+            </ul>
+        </section>
+
+          <section>
+            <h2>
+                Contatos
+            </h2>
+            <ul>
+                <li>E-maill: leticia.talachia@gmail.com</li>
+                <li>
+                    <a href="https://Linkdin.com" target="_blank">linkedin</a>
+                
+            
+            </ul>
+        </section>
+
+        <footer>
+            &copy; 2025 Letícia. Todos os direitos reservados.
+        </footer>
+    </main>
+
+</body>
+<script>
+    function mudarGrade() {
+        const principal = document.getElementById('Principal')
+        principal.classList.add('modo-grade')
+    }
+    function mudarLista() {
+        const principal = document.getElementById('Principal')
+        principal.classList.remove('modo-grade')
+    }
+
+</script>
+</html>
+
